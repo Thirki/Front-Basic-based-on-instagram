@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 
 import { Header } from "./components/Header";
+import PostContainer from "./components/PostContainer";
 import { PostContextProvider, PostsContext } from "./context/PostsContext";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
     <PostContextProvider>
       <div className="App">
         <Header />
+        <PostContainer />
       </div>
     </PostContextProvider>
   );
