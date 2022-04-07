@@ -21,8 +21,6 @@ export const PostsContext = createContext<IPostsContextType>(initialValue);
 export function PostContextProvider({ children }: IPostsContextProps) {
   const [postList, setPostList] = useState(initialValue.postList);
 
-  console.log(postList);
-
   const URL =
     "https://us-central1-squid-apis.cloudfunctions.net/test-front-basic";
 
