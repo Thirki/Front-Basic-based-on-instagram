@@ -1,0 +1,45 @@
+.image-card {
+  .image-container {
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    position: relative;
+    color: transparent;
+    &:hover img{
+      transition: .2s;
+      opacity: 0.8;
+    }
+
+    &:hover .post-status{
+      transition: .2s;
+      color: var(--main);
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: 0;
+      position: absolute;
+    }
+
+    .post-status {
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      transform: translate(50%, -50%);
+      font-size: .9rem;
+      p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg {
+          padding-right: 0.2rem;
+        }
+      }
+    }
+  }
+}
