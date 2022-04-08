@@ -11,26 +11,29 @@ interface IPostCardProps {
 }
 
 export function PostCard({ postObject }: IPostCardProps) {
+  console.log(postObject);
   return (
-    <div className="image-card">
-      <div className="image-container">
-        <img src={postObject.imagens.thumbnail.url} alt="" />
-        <div className="post-status">
-          <p>@{postObject.usuario.username}</p>
-          <p>
-            <FaHeart />
-            {postObject.upvotes}
-          </p>
-          <p>
-            <FaComment />
-            {postObject.comentarios}
-          </p>
-          <p>
-            <FaCalendarAlt />
-            {convertToDateFormater(postObject.criadoEm)}
-          </p>
+    <a href={postObject.link} target='_blank="true"'>
+      <div className="image-card">
+        <div className="image-container">
+          <img src={postObject.imagens.resolucaoPadrao.url} alt="" />
+          <div className="post-status">
+            <p>@{postObject.usuario.username}</p>
+            <p>
+              <FaHeart />
+              {postObject.upvotes}
+            </p>
+            <p>
+              <FaComment />
+              {postObject.comentarios}
+            </p>
+            <p>
+              <FaCalendarAlt />
+              {convertToDateFormater(postObject.criadoEm)}
+            </p>
+          </div>
         </div>
       </div>
-    </div>
+    </a>
   );
 }

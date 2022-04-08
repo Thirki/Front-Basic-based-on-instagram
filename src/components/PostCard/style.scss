@@ -1,3 +1,6 @@
+a {
+  margin: 0 auto;
+}
 .image-card {
   margin: 0 auto;
   .image-container {
@@ -26,6 +29,7 @@
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
+      object-fit: cover;
       z-index: 0;
       position: absolute;
     }

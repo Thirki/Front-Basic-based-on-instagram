@@ -5,8 +5,9 @@ export default interface IPostItem {
   comentarios: number;
   criadoEm: Date;
   legenda: string;
+  link: string;
   imagens: {
-    thumbnail: {
+    resolucaoPadrao: {
       url: string;
     };
   };
