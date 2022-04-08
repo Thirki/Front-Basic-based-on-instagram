@@ -1,0 +1,14 @@
+#metric-description {
+  margin: 0 auto;
+  width: 80%;
+  padding: 2rem 0;
+  h1 {
+    text-align: center;
+    color: var(--main);
+  }
+  .metrics-description-cards {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

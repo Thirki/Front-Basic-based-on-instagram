@@ -1,0 +1,23 @@
+.description-cards {
+  text-align: center;
+  h3 {
+
+  }
+  img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100%;
+    margin: 1.5rem 0;
+    border: 3px solid rgba(26, 26, 26, .15);
+    &:hover {
+      transition: .2s;
+      transform: scale(1.015);
+      border: 3px solid rgba(26, 26, 26, .2);
+    }
+  }
+  p {
+    color: var(--main);
+    width: 50%;
+    margin: 0 auto;
+  }
+}
