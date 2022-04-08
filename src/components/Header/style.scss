@@ -13,3 +13,35 @@
     }
   }
 }
+
+@media screen and (min-width : 481px) and (max-width : 800px) {
+  #main-header {
+    nav {
+      img {
+        width: 25rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width : 320px) and (max-width : 480px) {
+  #main-header {
+    padding: 0.5rem;
+    nav {
+      img {
+        width: 70vw;
+      }
+    }
+  }
+}
+
+@media screen and (min-width : 1px) and (max-width : 319px) {
+  #main-header {
+    padding: 0.2rem;
+    nav {
+      img {
+        width: 70vw;
+      }
+    }
+  }
+}

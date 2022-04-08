@@ -13,7 +13,6 @@ interface IPostCardProps {
 export function PostCard({ postObject }: IPostCardProps) {
   return (
     <div className="image-card">
-      {/* <h1>{postObject.usuario.username}</h1> */}
       <div className="image-container">
         <img src={postObject.imagens.thumbnail.url} alt="" />
         <div className="post-status">

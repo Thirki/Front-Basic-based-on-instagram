@@ -1,4 +1,5 @@
 .image-card {
+  margin: 0 auto;
   .image-container {
     width: 150px;
     height: 150px;
@@ -47,3 +48,39 @@
     }
   }
 }
+
+@media screen and (min-width : 1200px) {
+  .image-card {
+    .image-container {
+      width: 150px;
+      height: 150px;
+    }
+  }
+}
+
+@media screen and (min-width : 481px) and (max-width : 800px) {
+  .image-card {
+    .image-container {
+      width: 300px;
+      height: 300px;
+    }
+  }
+}
+
+@media screen and (min-width : 320px) and (max-width : 480px) {
+  .image-card {
+    .image-container {
+      width: 50vw;
+      height: 50vw;
+    }
+  }
+}
+
+  @media screen and (min-width : 1px) and (max-width : 319px) {
+    .image-card {
+      .image-container {
+        width: 80vw;
+        height: 80vw;
+      }
+    }
+  }
