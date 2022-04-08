@@ -1,8 +1,9 @@
 #post-container {
   width: 50%;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-gap: 1rem;
-  padding-bottom: 1rem;
+  background-color: red;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 1rem;
 }
