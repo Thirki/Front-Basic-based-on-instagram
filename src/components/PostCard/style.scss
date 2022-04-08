@@ -5,14 +5,18 @@
     background-color: black;
     position: relative;
     color: transparent;
+    &:hover {
+      cursor: pointer;
+    }
+
     &:hover img{
       transition: .2s;
-      opacity: 0.8;
+      opacity: 0.7;
     }
 
     &:hover .post-status{
       transition: .2s;
-      color: var(--main);
+      color: var(--main-text-color);
     }
 
     img {

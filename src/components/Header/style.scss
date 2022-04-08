@@ -1,6 +1,15 @@
 #main-header {
-  background-color: var(--main);
+  padding: 1rem;
   nav {
-    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    img {
+      width: 25rem;
+      &:hover {
+        transition: 0.2s;
+        filter: brightness(1.1);
+        cursor: pointer;
+      }
+    }
   }
 }
