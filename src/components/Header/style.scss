@@ -1,8 +1,36 @@
 #main-header {
+  margin-bottom: 1rem;
   padding: 1rem;
+  background-color: var(--secondary-background);
+  border-bottom: 2px solid rgba(26, 26, 26, 0.1);
   nav {
+    margin: 0 auto;
+    width: 80%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+
+    ul {
+      list-style: none;
+      display: flex;
+      font-size: 1.5rem;
+      li:first-child {
+        margin: 0 1rem;
+      }
+      li{
+        a {
+          all: unset;
+          text-decoration: none;
+          font-weight: bold;
+          color: var(--text-color);
+
+          &:hover {
+            transition: 0.2s;
+            color: var(--highlight-color);
+          }
+        }
+      }
+    }
     img {
       width: 25rem;
       &:hover {
