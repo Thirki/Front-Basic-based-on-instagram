@@ -20,8 +20,8 @@ html{
 }
 
 body{
-  background-color: var(--background);
   -webkit-font-smoothing: antialiased;
+  background-image: url('../assets/background.svg');
 }
 
 body, input, textarea, button {
