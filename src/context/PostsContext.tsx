@@ -2,12 +2,14 @@
 /* eslint-disable @typescript-eslint/no-empty-function */
 import { createContext, ReactNode, useEffect, useState } from "react";
 
+import IPostItem from "../interfaces/post";
+
 type IPostsContextProps = {
   children: ReactNode;
 };
 
 type IPostsContextType = {
-  postList: string[];
+  postList: IPostItem[];
   setPostList: (newState: []) => void;
 };
 
