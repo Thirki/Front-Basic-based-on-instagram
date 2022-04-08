@@ -1,15 +1,13 @@
 import React from "react";
 
-import { Header } from "./components/Header";
-import { PostContainer } from "./components/PostContainer";
+import AppRoutes from "./AppRoutes";
 import { PostContextProvider } from "./context/PostsContext";
 
 function App() {
   return (
     <PostContextProvider>
       <div className="App">
-        <Header />
-        <PostContainer />
+        <AppRoutes />
       </div>
     </PostContextProvider>
   );
