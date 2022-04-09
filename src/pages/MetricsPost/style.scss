@@ -1,0 +1,80 @@
+#metrics-dashboard {
+  text-align: center;
+  color: var(--text-color);
+  .chart-container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: var(--secondary-background);
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    .chart-comment {
+      background-color: var(--main);
+      padding: 1rem;
+
+      img {
+        width: 15rem;
+        height: 15rem;
+        border-radius: 100%;
+        object-fit: cover;
+        margin: 1rem 0;
+        border: 2px dashed var(--text-color);
+      }
+    }
+    .chart-area {
+    }
+  }
+}
+
+@media screen and (min-width : 1px) and (max-width : 319px) {
+  #metrics-dashboard {
+    .chart-container {
+      padding: 0;
+      width: 100%;
+      grid-template-columns: repeat(1, 1fr);
+      .chart-comment {
+        padding: 0;
+        }
+      }
+      .chart-area {
+      }
+  }
+}
+
+@media screen and (min-width : 320px) and (max-width : 480px) {
+  #metrics-dashboard {
+    .chart-container {
+      width: 90%;
+      grid-template-columns: repeat(1, 1fr);
+      .chart-comment {
+        }
+      }
+      .chart-area {
+      }
+  }
+}
+
+@media screen and (min-width : 481px) and (max-width : 800px) {
+  #metrics-dashboard {
+    .chart-container {
+      grid-template-columns: repeat(1, 1fr);
+      .chart-comment {
+        }
+      }
+      .chart-area {
+      }
+  }
+}
+
+@media screen and (min-width : 801px) and (max-width : 1199px) {
+  #metrics-dashboard {
+    .chart-container {
+      grid-template-columns: repeat(1, 1fr);
+      .chart-comment {
+        }
+      }
+      .chart-area {
+      }
+  }
+}
