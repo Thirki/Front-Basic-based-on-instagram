@@ -11,7 +11,6 @@ interface IPostCardProps {
 }
 
 export function PostCard({ postObject }: IPostCardProps) {
-  console.log(postObject);
   return (
     <a href={postObject.link} target='_blank="true"'>
       <div className="image-card">

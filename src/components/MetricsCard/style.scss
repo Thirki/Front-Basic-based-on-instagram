@@ -1,0 +1,73 @@
+#metric-card {
+  margin: 2rem;
+  border-radius: .5rem;
+  box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
+  overflow: hidden;
+
+  &:hover {
+    transition: .2s;
+    transform: scale(1.01);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+
+  img {
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    object-fit: cover;
+    padding: .5rem;
+  }
+
+  .reactions {
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    p {
+      color: var(--text-color);
+      display: flex;
+      align-items: center;
+      svg {
+        margin-right: 1rem;
+      }
+    }
+  }
+  button {
+    border: 0;
+    width: 100%;
+    height: 2rem;
+    color: var(--main);
+    background-color: var(--button-green);
+    text-align: center;
+    &:hover {
+      transition: 0.2s;
+      background-color: var(--button-green-hover);
+    }
+  }
+}
+
+@media screen and (min-width : 1px) and (max-width : 319px) {
+  #metric-card {
+    img {
+      height: 100vw;
+    }
+  }
+}
+
+@media screen and (min-width : 481px) and (max-width : 800px) {
+  #metric-card {
+    img {
+      height: 40vw;
+    }
+  }
+}
+
+@media screen and (min-width : 801px) and (max-width : 1199px) {
+  #metric-card {
+    img {
+      height: 20vw;
+    }
+  }
+}
+
