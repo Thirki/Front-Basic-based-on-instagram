@@ -24,13 +24,13 @@ export function Metrics() {
       <div id="metrics">
         <div className="text-container">
           <h1>
-            Acompanhe suas mêtricas
+            Track your metrics
             <br />
-            Utilizando nosso site!
+            Using our website!
           </h1>
           <p>
-            Utilizamos as teclonogias e calculos mais modernos para trazer as
-            mêtricas mais precisas para você!
+            We use the most modern technologies and calculations to bring you
+            the most accurate metrics!
           </p>
         </div>
         <div className="hero-image">
