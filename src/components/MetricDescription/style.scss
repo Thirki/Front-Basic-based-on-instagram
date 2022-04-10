@@ -1,0 +1,57 @@
+#metric-description {
+  margin: 0 auto;
+  width: 80%;
+  padding: 2rem 0;
+  h1 {
+    text-align: center;
+    color: var(--main);
+  }
+  .metrics-description-cards {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media screen and (min-width : 1px) and (max-width : 319px) {
+  #metric-description {
+    width: 100%;
+    h1 {
+    }
+    .metrics-description-cards {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
+
+@media screen and (min-width : 320px) and (max-width : 480px) {
+  #metric-description {
+    width: 100%;
+    h1 {
+    }
+    .metrics-description-cards {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
+
+@media screen and (min-width : 481px) and (max-width : 800px) {
+  #metric-description {
+    width: 90%;
+    h1 {
+    }
+    .metrics-description-cards {
+    }
+  }
+}
+
+@media screen and (min-width : 801px) and (max-width : 1199px) {
+  #metric-description {
+    h1 {
+    }
+    .metrics-description-cards {
+    }
+  }
+}
+

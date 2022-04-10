@@ -1,0 +1,38 @@
+.description-cards {
+  text-align: center;
+  h2 {
+    margin-top: 1rem;
+    color: var(--text-color);
+  }
+  img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100%;
+    border: 3px solid rgba(26, 26, 26, .15);
+    &:hover {
+      transition: .2s;
+      transform: scale(1.015);
+      border: 3px solid rgba(26, 26, 26, .2);
+    }
+  }
+  p {
+    font-style: italic;
+    color: var(--main);
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width : 481px) and (max-width : 800px) {
+  .description-cards {
+    h2 {
+    }
+    img {
+      width: 9rem;
+      height: 9rem;
+    }
+    p {
+      width: 90%;
+    }
+  }
+}
