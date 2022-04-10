@@ -24,6 +24,7 @@
           color: var(--text-color);
 
           &:hover {
+            cursor: pointer;
             transition: 0.2s;
             color: var(--highlight-color);
           }
@@ -44,6 +45,10 @@
 @media screen and (min-width : 481px) and (max-width : 800px) {
   #main-header {
     nav {
+      width: 90%;
+      ul li {
+        font-size: 1.5rem;
+      }
       img {
         width: 15rem;
       }
@@ -55,6 +60,10 @@
   #main-header {
     padding: 0.5rem;
     nav {
+      flex-direction: column;
+      ul {
+        margin: 1rem 0;
+      }
       img {
         width: 70vw;
       }
@@ -66,6 +75,10 @@
   #main-header {
     padding: 0.2rem;
     nav {
+      flex-direction: column;
+      ul {
+        margin: 1rem 0;
+      }
       img {
         width: 70vw;
       }
