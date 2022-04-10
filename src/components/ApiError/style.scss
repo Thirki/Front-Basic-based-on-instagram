@@ -1,0 +1,16 @@
+#api-error {
+  margin: 0 auto;
+  width: 40%;
+}
+
+@media screen and (min-width : 801px) and (max-width : 1200px) {
+  #api-error {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width : 1px) and (max-width : 800px) {
+  #api-error {
+    width: 100%;
+  }
+}

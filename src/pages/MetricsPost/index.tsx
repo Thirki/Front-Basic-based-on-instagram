@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
+import { ApiError } from "../../components/ApiError";
 import { Loading } from "../../components/Loading";
 import { PostChart } from "../../components/PostChart";
 import { PostsContext } from "../../context/PostsContext";
@@ -9,7 +10,7 @@ import IPostItem from "../../interfaces/post";
 import "./style.scss";
 
 export function MetricsPost() {
-  const { postList } = useContext(PostsContext);
+  const { postList, apiError } = useContext(PostsContext);
   const [currentPost, setCurrentPost] = useState<IPostItem>();
   const { id } = useParams();
 
@@ -19,6 +20,10 @@ export function MetricsPost() {
       setCurrentPost(post);
     }
   }, [postList]);
+
+  if (apiError) {
+    return <ApiError />;
+  }
 
   if (!currentPost) {
     return <Loading />;
