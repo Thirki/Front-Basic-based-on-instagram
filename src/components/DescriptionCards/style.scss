@@ -1,12 +1,13 @@
 .description-cards {
   text-align: center;
-  h3 {
+  h2 {
+    margin-top: 1rem;
+    color: var(--text-color);
   }
   img {
     width: 10rem;
     height: 10rem;
     border-radius: 100%;
-    margin: 1.5rem 0;
     border: 3px solid rgba(26, 26, 26, .15);
     &:hover {
       transition: .2s;
@@ -15,6 +16,7 @@
     }
   }
   p {
+    font-style: italic;
     color: var(--main);
     width: 50%;
     margin: 0 auto;
@@ -23,7 +25,7 @@
 
 @media screen and (min-width : 481px) and (max-width : 800px) {
   .description-cards {
-    h3 {
+    h2 {
     }
     img {
       width: 9rem;

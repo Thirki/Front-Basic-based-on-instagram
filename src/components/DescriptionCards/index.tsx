@@ -13,8 +13,8 @@ interface IDescriptionCards {
 export function DescriptionCards({ cardObj }: IDescriptionCards) {
   return (
     <div className="description-cards">
-      <h2>{cardObj.title}</h2>
       <img src={cardObj.imgLink} alt={cardObj.title} />
+      <h2>{cardObj.title}</h2>
       <p>{cardObj.description}</p>
     </div>
   );
