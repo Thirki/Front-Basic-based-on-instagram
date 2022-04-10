@@ -1,29 +1,36 @@
 #post-container {
-  width: 50%;
+  padding: 1rem;
+  width: 55%;
   margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  transform: translateX(.5rem);
-  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: .5rem;
+}
+
+@media screen and (min-width : 801px) and (max-width : 1199px) {
+  #post-container {
+    width: 80%;
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
 
 @media screen and (min-width : 481px) and (max-width : 800px) {
   #post-container {
-    width: 90%;
+    width: 80%;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media screen and (min-width : 320px) and (max-width : 480px) {
     #post-container {
       width: 90%;
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 
 @media screen and (min-width : 1px) and (max-width : 319px) {
   #post-container {
-    width: 90%;
-    margin: 0;
-    gap: 0;
+    width: 95%;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
