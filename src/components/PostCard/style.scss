@@ -1,90 +1,97 @@
 a {
-  margin: 0 auto;
-}
-.image-card {
-  margin: 0 auto;
-  .image-container {
-    width: 150px;
-    height: 150px;
-    background-color: black;
-    position: relative;
-    color: transparent;
-    &:hover {
-      cursor: pointer;
-    }
+  width: 100%;
+  color: var(--main-text-color);
+  text-decoration: none;
 
-    &:hover img{
-      transition: .2s;
-      opacity: 0.7;
-    }
+  .image-container {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
 
     &:hover .post-status{
-      transition: .2s;
-      color: var(--main-text-color);
-    }
-
-    img {
-      width: 100%;
-      height: 100%;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      object-fit: cover;
-      z-index: 0;
-      position: absolute;
+      opacity: 1;
     }
 
     .post-status {
+      opacity: 0;
       width: 100%;
-      position: absolute;
-      top: 50%;
-      right: 50%;
-      transform: translate(50%, -50%);
-      font-size: .9rem;
+      padding: 1rem;
+      text-align: center;
+      font-size: .8rem;
+
       p {
         display: flex;
-        align-items: center;
         justify-content: center;
         svg {
-          padding-right: 0.2rem;
+          margin-right: .2rem;
         }
       }
     }
   }
 }
+// @media screen and (min-width : 1200px) {
+//   .image-card {
+//     .image-container {
+//       width: 150px;
+//       height: 150px;
+//     }
+//   }
+// }
 
-@media screen and (min-width : 1200px) {
-  .image-card {
+@media screen and (min-width : 801px) and (max-width : 1199px) {
+  a {
     .image-container {
-      width: 150px;
-      height: 150px;
+      img {
+
+      }
+      .post-status {
+
+      }
     }
   }
 }
 
 @media screen and (min-width : 481px) and (max-width : 800px) {
-  .image-card {
+  a {
     .image-container {
-      width: 300px;
-      height: 300px;
+      img {
+
+      }
+      .post-status {
+
+      }
     }
   }
 }
 
 @media screen and (min-width : 320px) and (max-width : 480px) {
-  .image-card {
+  a {
     .image-container {
-      width: 50vw;
-      height: 50vw;
+      img {
+
+      }
+      .post-status {
+
+      }
     }
   }
 }
 
-  @media screen and (min-width : 1px) and (max-width : 319px) {
-    .image-card {
-      .image-container {
-        width: 80vw;
-        height: 80vw;
+@media screen and (min-width : 1px) and (max-width : 319px) {
+  a {
+    .image-container {
+      img {
+
+      }
+      .post-status {
+
       }
     }
   }
+}
