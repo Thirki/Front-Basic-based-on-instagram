@@ -3,7 +3,18 @@
   <img height="300px" src="https://user-images.githubusercontent.com/69635807/161143745-b903e782-9112-4fb0-8d6e-e92fee95f525.png">
 </p>
 
-![Portfolio](https://user-images.githubusercontent.com/69635807/162641845-08506561-2486-40b5-a4c6-71b220e2f062.jpg)
+# ⚠️ Warning #
+The project has extra content on another branch, just switch to the "release" branch
+
+## master branch:
+* [master Branch Link](https://github.com/Thirki/Front-Basic-based-on-instagram/tree/master)
+* [master Branch Preview](https://squid-instagram-feed.netlify.app/)
+
+## release branch:
+* [release Branch Link](https://github.com/Thirki/Front-Basic-based-on-instagram/tree/release)
+* [release Branch Preview](https://release-squid-instagram-feed.netlify.app/)
+
+![website](https://user-images.githubusercontent.com/69635807/162641845-08506561-2486-40b5-a4c6-71b220e2f062.jpg)
 
 # 📁 Technologies #
 This project was developed using the following technologies:
