@@ -1,0 +1,27 @@
+#animation-container {
+  width: 60%;
+}
+
+@media screen and (min-width : 801px) and (max-width : 1199px) {
+  #animation-container {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width : 481px) and (max-width : 800px) {
+  #animation-container {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width : 320px) and (max-width : 480px) {
+  #animation-container {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width : 1px) and (max-width : 319px) {
+  #animation-container {
+    width: 100%;
+  }
+}
