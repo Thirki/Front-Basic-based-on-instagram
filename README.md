@@ -3,6 +3,17 @@
   <img height="300px" src="https://user-images.githubusercontent.com/69635807/161143745-b903e782-9112-4fb0-8d6e-e92fee95f525.png">
 </p>
 
+# ⚠️ Warning #
+The project has extra content on another branch, just switch to the "release" branch
+
+## master branch:
+* [master Branch Link](https://github.com/Thirki/Front-Basic-based-on-instagram/tree/master)
+* [master Branch Preview](https://squid-instagram-feed.netlify.app/)
+
+## release branch:
+* [release Branch Link](https://github.com/Thirki/Front-Basic-based-on-instagram/tree/release)
+* [release Branch Preview](https://release-squid-instagram-feed.netlify.app/)
+
 ![Portfolio](https://user-images.githubusercontent.com/69635807/162642115-723e7df9-e35f-43f1-96ed-7ec8a8d271bd.jpg)
 
 # 📁 Technologies #
