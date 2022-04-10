@@ -1,7 +1,6 @@
 .description-cards {
   text-align: center;
   h3 {
-
   }
   img {
     width: 10rem;
@@ -19,5 +18,19 @@
     color: var(--main);
     width: 50%;
     margin: 0 auto;
+  }
+}
+
+@media screen and (min-width : 481px) and (max-width : 800px) {
+  .description-cards {
+    h3 {
+    }
+    img {
+      width: 9rem;
+      height: 9rem;
+    }
+    p {
+      width: 90%;
+    }
   }
 }
